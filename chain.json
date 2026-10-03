@@ -1,0 +1,464 @@
+[
+  {
+    "index": 0,
+    "node_id": "GENESIS",
+    "sensor_data": {},
+    "prediction": 0,
+    "confidence": 1.0,
+    "trust_score": 1.0,
+    "label": null,
+    "timestamp": 0,
+    "previous_hash": "0",
+    "hash": "befb9c2ac8dea34825cc9cdbf305331ab4ce64611b3e3d5abcbc2d1a89d7616e"
+  },
+  {
+    "index": 1,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 27.2,
+      "humidity": 58.6
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.52,
+    "label": 0,
+    "timestamp": 1791043489.7856088,
+    "previous_hash": "befb9c2ac8dea34825cc9cdbf305331ab4ce64611b3e3d5abcbc2d1a89d7616e",
+    "hash": "7467a9fc926934644a74d276af476a995c2b967fbb3b68103b382ba2c3453dea"
+  },
+  {
+    "index": 2,
+    "node_id": "N01",
+    "sensor_data": {
+      "temperature": 24.9,
+      "humidity": 61.8
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.52,
+    "label": 0,
+    "timestamp": 1791043489.8877082,
+    "previous_hash": "7467a9fc926934644a74d276af476a995c2b967fbb3b68103b382ba2c3453dea",
+    "hash": "7c6cbd57d852fe58d2e753189a270e68f70d62144b20dc32012b4ff14faf3e95"
+  },
+  {
+    "index": 3,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 61.1,
+      "humidity": 8.4
+    },
+    "prediction": 1,
+    "confidence": 0.95,
+    "trust_score": 0.37,
+    "label": 1,
+    "timestamp": 1791043489.988495,
+    "previous_hash": "7c6cbd57d852fe58d2e753189a270e68f70d62144b20dc32012b4ff14faf3e95",
+    "hash": "62a35d875907b2afd231deb81a0965e07ab80c908ab67d1ed3dca54b78c363c2"
+  },
+  {
+    "index": 4,
+    "node_id": "N04",
+    "sensor_data": {
+      "temperature": 27.2,
+      "humidity": 53.9
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.52,
+    "label": 0,
+    "timestamp": 1791043490.098595,
+    "previous_hash": "62a35d875907b2afd231deb81a0965e07ab80c908ab67d1ed3dca54b78c363c2",
+    "hash": "5dcc6eaed1c48fc3db4e3731030f357c47e829c5ceb3cf22928e099688b49e57"
+  },
+  {
+    "index": 5,
+    "node_id": "N03",
+    "sensor_data": {
+      "temperature": 27.5,
+      "humidity": 69.6
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.52,
+    "label": 0,
+    "timestamp": 1791043490.2009947,
+    "previous_hash": "5dcc6eaed1c48fc3db4e3731030f357c47e829c5ceb3cf22928e099688b49e57",
+    "hash": "e5a51c621c4cc9820c41e7786b1899d5f19608f9fe9dfff8b90622d7e486862d"
+  },
+  {
+    "index": 6,
+    "node_id": "N03",
+    "sensor_data": {
+      "temperature": 61.0,
+      "humidity": 5.4
+    },
+    "prediction": 1,
+    "confidence": 0.95,
+    "trust_score": 0.37,
+    "label": 1,
+    "timestamp": 1791043490.301973,
+    "previous_hash": "e5a51c621c4cc9820c41e7786b1899d5f19608f9fe9dfff8b90622d7e486862d",
+    "hash": "af9a1c0d435cafd40f708249be2dc7688f3cf0a0609648537a65e6274fae61a7"
+  },
+  {
+    "index": 7,
+    "node_id": "N04",
+    "sensor_data": {
+      "temperature": 29.4,
+      "humidity": 58.8
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.54,
+    "label": 0,
+    "timestamp": 1791043490.4029422,
+    "previous_hash": "af9a1c0d435cafd40f708249be2dc7688f3cf0a0609648537a65e6274fae61a7",
+    "hash": "987b57be1258ea79046f703973025d7c2a6d3bdd05e22c867655e199717022ae"
+  },
+  {
+    "index": 8,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 25.4,
+      "humidity": 61.8
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.52,
+    "label": 0,
+    "timestamp": 1791043490.503916,
+    "previous_hash": "987b57be1258ea79046f703973025d7c2a6d3bdd05e22c867655e199717022ae",
+    "hash": "bf3ea7f8d352b9a491594a31768ba39b963932e7e7c066bb25b064df22e4635e"
+  },
+  {
+    "index": 9,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 25.9,
+      "humidity": 53.9
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.39,
+    "label": 0,
+    "timestamp": 1791043490.6077855,
+    "previous_hash": "bf3ea7f8d352b9a491594a31768ba39b963932e7e7c066bb25b064df22e4635e",
+    "hash": "19147db7f0fabf11da2ec9113c83d1f275a37a351b06fb61c098bc2c45a9dc80"
+  },
+  {
+    "index": 10,
+    "node_id": "N03",
+    "sensor_data": {
+      "temperature": 24.1,
+      "humidity": 64.5
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.39,
+    "label": 0,
+    "timestamp": 1791043490.710016,
+    "previous_hash": "19147db7f0fabf11da2ec9113c83d1f275a37a351b06fb61c098bc2c45a9dc80",
+    "hash": "672120eb052f288c838bab339a10d67833f47e18b52c691a05edd15c1026ba17"
+  },
+  {
+    "index": 11,
+    "node_id": "N01",
+    "sensor_data": {
+      "temperature": 30.0,
+      "humidity": 59.6
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.54,
+    "label": 0,
+    "timestamp": 1791043490.8110154,
+    "previous_hash": "672120eb052f288c838bab339a10d67833f47e18b52c691a05edd15c1026ba17",
+    "hash": "f6a43decb1d154650e389ae460196dd92a4cd6bb13c30cf285923126bfbefa2a"
+  },
+  {
+    "index": 12,
+    "node_id": "N01",
+    "sensor_data": {
+      "temperature": 30.2,
+      "humidity": 53.4
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.56,
+    "label": 0,
+    "timestamp": 1791043490.911894,
+    "previous_hash": "f6a43decb1d154650e389ae460196dd92a4cd6bb13c30cf285923126bfbefa2a",
+    "hash": "f150a26f39c39e8b40f93099bbadbf23e094819676f01b8771dedbead037e037"
+  },
+  {
+    "index": 13,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 24.5,
+      "humidity": 63.5
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.54,
+    "label": 0,
+    "timestamp": 1791043491.0173311,
+    "previous_hash": "f150a26f39c39e8b40f93099bbadbf23e094819676f01b8771dedbead037e037",
+    "hash": "db7c696371f2d0a2019d64ccbeb3ca37d7484e12e9c6e65e0eb8ef1979e48066"
+  },
+  {
+    "index": 14,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 24.4,
+      "humidity": 55.7
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.41,
+    "label": 0,
+    "timestamp": 1791043491.1181307,
+    "previous_hash": "db7c696371f2d0a2019d64ccbeb3ca37d7484e12e9c6e65e0eb8ef1979e48066",
+    "hash": "23d3f3f600872fe561e418dba1d6e3c1a1242bd8f366f1d2028586f6edac8cdf"
+  },
+  {
+    "index": 15,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 28.0,
+      "humidity": 56.4
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.56,
+    "label": 0,
+    "timestamp": 1791043491.2188137,
+    "previous_hash": "23d3f3f600872fe561e418dba1d6e3c1a1242bd8f366f1d2028586f6edac8cdf",
+    "hash": "508e0cae581ae1987f58d679f104e8de5df5ce6194cbce173709ca62d40b6bed"
+  },
+  {
+    "index": 16,
+    "node_id": "N04",
+    "sensor_data": {
+      "temperature": 27.9,
+      "humidity": 64.5
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.56,
+    "label": 0,
+    "timestamp": 1791043491.3193686,
+    "previous_hash": "508e0cae581ae1987f58d679f104e8de5df5ce6194cbce173709ca62d40b6bed",
+    "hash": "4386300d048ba3a5334c28145fbd39dc8f5ddad34fe824b0d4a200b6980d68dc"
+  },
+  {
+    "index": 17,
+    "node_id": "N03",
+    "sensor_data": {
+      "temperature": 86.6,
+      "humidity": 1.1
+    },
+    "prediction": 1,
+    "confidence": 0.95,
+    "trust_score": 0.24,
+    "label": 1,
+    "timestamp": 1791043491.4205863,
+    "previous_hash": "4386300d048ba3a5334c28145fbd39dc8f5ddad34fe824b0d4a200b6980d68dc",
+    "hash": "11514e5f9f55634cfac93b015afe82c08b7b64efceee486c40e9cab598764312"
+  },
+  {
+    "index": 18,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 25.6,
+      "humidity": 62.9
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.43,
+    "label": 0,
+    "timestamp": 1791043491.5215192,
+    "previous_hash": "11514e5f9f55634cfac93b015afe82c08b7b64efceee486c40e9cab598764312",
+    "hash": "e2bafd3e9cd39d4e65ebba0c075f4d719298a7f74af6fea21b5e2b9f4925a441"
+  },
+  {
+    "index": 19,
+    "node_id": "N01",
+    "sensor_data": {
+      "temperature": 26.0,
+      "humidity": 67.2
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.58,
+    "label": 0,
+    "timestamp": 1791043491.6225886,
+    "previous_hash": "e2bafd3e9cd39d4e65ebba0c075f4d719298a7f74af6fea21b5e2b9f4925a441",
+    "hash": "0606cb1f1e3373c491889798f9931378297335a93a6d89950592ae6b20c73c32"
+  },
+  {
+    "index": 20,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 26.3,
+      "humidity": 61.5
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.58,
+    "label": 0,
+    "timestamp": 1791043491.7233944,
+    "previous_hash": "0606cb1f1e3373c491889798f9931378297335a93a6d89950592ae6b20c73c32",
+    "hash": "1aa49709dcfa6b98709dff5a510739bc2b66524901d80d5ec7ef7571cd551109"
+  },
+  {
+    "index": 21,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 28.0,
+      "humidity": 60.2
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.6,
+    "label": 0,
+    "timestamp": 1791043491.8241372,
+    "previous_hash": "1aa49709dcfa6b98709dff5a510739bc2b66524901d80d5ec7ef7571cd551109",
+    "hash": "530f9a82e50cbd479e8408d4567ebd9a96b6f7d807f2c424c8d34069f3130c9f"
+  },
+  {
+    "index": 22,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 23.3,
+      "humidity": 59.1
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.62,
+    "label": 0,
+    "timestamp": 1791043491.9250875,
+    "previous_hash": "530f9a82e50cbd479e8408d4567ebd9a96b6f7d807f2c424c8d34069f3130c9f",
+    "hash": "8d97366ffd7f251da3d63d96907c1dba5b7714c5e98e35161d41c0e8f125c7bd"
+  },
+  {
+    "index": 23,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 28.9,
+      "humidity": 56.8
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.64,
+    "label": 0,
+    "timestamp": 1791043492.0263784,
+    "previous_hash": "8d97366ffd7f251da3d63d96907c1dba5b7714c5e98e35161d41c0e8f125c7bd",
+    "hash": "ec895eae58f360bf6d845bc5245a313d582894e934fce20872e9ee2be3d85603"
+  },
+  {
+    "index": 24,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 29.6,
+      "humidity": 60.3
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.66,
+    "label": 0,
+    "timestamp": 1791043492.1272645,
+    "previous_hash": "ec895eae58f360bf6d845bc5245a313d582894e934fce20872e9ee2be3d85603",
+    "hash": "1f57e337b37217a5f15ac34a19c895ef81fd9c7549f5bbd5abc1ab930e271551"
+  },
+  {
+    "index": 25,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 25.1,
+      "humidity": 59.4
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.68,
+    "label": 0,
+    "timestamp": 1791043492.2281682,
+    "previous_hash": "1f57e337b37217a5f15ac34a19c895ef81fd9c7549f5bbd5abc1ab930e271551",
+    "hash": "7a0fa8134632ef10814859d1fa09c7320fde67a28427c712099f0c4ddcde5741"
+  },
+  {
+    "index": 26,
+    "node_id": "N04",
+    "sensor_data": {
+      "temperature": 25.6,
+      "humidity": 60.5
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.58,
+    "label": 0,
+    "timestamp": 1791043492.32905,
+    "previous_hash": "7a0fa8134632ef10814859d1fa09c7320fde67a28427c712099f0c4ddcde5741",
+    "hash": "795a3e940c38a88cb10f87ae9d40fda18791146e3ca2527ab07db7d86984e731"
+  },
+  {
+    "index": 27,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 25.3,
+      "humidity": 59.9
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.7,
+    "label": 0,
+    "timestamp": 1791043492.4299667,
+    "previous_hash": "795a3e940c38a88cb10f87ae9d40fda18791146e3ca2527ab07db7d86984e731",
+    "hash": "84df383735a224b201c9e487b101f1acff4dcc4b98421a7fa9d5b572fb35587c"
+  },
+  {
+    "index": 28,
+    "node_id": "N03",
+    "sensor_data": {
+      "temperature": 28.9,
+      "humidity": 60.0
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.26,
+    "label": 0,
+    "timestamp": 1791043492.5309515,
+    "previous_hash": "84df383735a224b201c9e487b101f1acff4dcc4b98421a7fa9d5b572fb35587c",
+    "hash": "3cfc44680c02e6cbd650411405691e4ceefc3b77c33432bea7b36d8d9f1ce414"
+  },
+  {
+    "index": 29,
+    "node_id": "N05",
+    "sensor_data": {
+      "temperature": 24.8,
+      "humidity": 55.8
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.72,
+    "label": 0,
+    "timestamp": 1791043492.63214,
+    "previous_hash": "3cfc44680c02e6cbd650411405691e4ceefc3b77c33432bea7b36d8d9f1ce414",
+    "hash": "2202a4aab4205a4766f12c26adfbcde8fe69c8da202b789f99ab53edea5d5e28"
+  },
+  {
+    "index": 30,
+    "node_id": "N02",
+    "sensor_data": {
+      "temperature": 27.3,
+      "humidity": 61.6
+    },
+    "prediction": 0,
+    "confidence": 0.95,
+    "trust_score": 0.45,
+    "label": 0,
+    "timestamp": 1791043492.733135,
+    "previous_hash": "2202a4aab4205a4766f12c26adfbcde8fe69c8da202b789f99ab53edea5d5e28",
+    "hash": "82825db2fe3ad2fc676de8e9c6ca2c039c689c2cc37b9af05c8f294c0c67053c"
+  }
+]
