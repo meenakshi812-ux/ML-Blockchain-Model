@@ -1,4 +1,4 @@
-# EML Blockchain Model
+# ML Blockchain Model
 
 Real-time implementation of the paper "Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks". Sensor data is simulated.
 
