@@ -7,7 +7,7 @@ This project is the real-time implementation of the paper:
 
 **"Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks"**
 
-- Authors: S.Meenakshi , K.Priyadharshini , S.Vignesh devi , Dr.J.V.Anchitaalagammai, Dr.S.Kavitha , Mr.S.Murali
+- Authors: S.Meenakshi , K.Priyadharshini , S.Vignesh devi , Dr.J.V.Anchitaalagammai, Mr.S.Murali,DR.S..Kavitha
 - Conference: ICOSICS International Conference on Secure IoT and Cybersecurity 2026
 - Publisher: IEEE Xplore
 - Status: [Accepted and Presented IEEE Xplore]
@@ -92,14 +92,20 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 - Add continuous online learning so the model adapts to new attack patterns.
 
 ## TEAM
-- Person A: Data collection, Preprocessing, ML model, Dynamic Trust score
-- Person B: Blockchain, Pipeline, Dashboard
+- Person A - PRIYADHARSHINI K : Data collection, Preprocessing, ML model, Dynamic Trust score
+- Person B - MEENAKSHI S : Blockchain, Pipeline, Dashboard
 
 ## CONTRIBUTORS
-PRIYADHARSHINI K
 As person A , I developed the detection side of the system. She built the sensor data generator that simulates 10 virtual nodes producing temperature, humidity and pressure readings, including fake readings from spoof, spike, drift, replay and stuck-value attacks. She implemented the preprocessing and feature-engineering steps, trained and evaluated the Random Forest model that classifies each reading as genuine or fake, and designed the dynamic trust score that updates for each sensor node based on its behaviour.
 
-MEENAKSHI S
 As person B , She developed the integrity and delivery side of the system. She implemented the hash-linked blockchain using SHA-256, storing each record with its prediction and trust score, and added chain verification that detects tampering such as edited values and broken links. She built the real-time pipeline that connects sensing, ML detection, trust scoring, blockchain storage and verification, and created the live Streamlit dashboard with a tamper demonstration that flags the altered block.
 
 ## FACULTY GUIDES
+
+- Dr.J.V.Anchitaalagammai Head Of Department  CSE(CS)
+  Velammal College of Engineering and Technology Viraganoor,Madurai
+- Mr.S.Murali Assistant Professor  CSE(CS)
+  Velammal College of Engineering and Technology Viraganoor,Madurai
+- Dr. S. Kavitha Associate Professor  CSE(CS)
+  Velammal College of Engineering and Technology Viraganoor,Madurai
+  
