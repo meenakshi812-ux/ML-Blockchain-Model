@@ -81,6 +81,23 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 - The blockchain runs on a single machine without distributed consensus.
 - These all data are collected in single stimulation.
 
+## FUTURE WORK 
+- Test the system on a real IoT testbed with physical sensors instead of simulated data.
+- Replace the single-machine blockchain with a distributed platform (for example Ethereum or Hyperledger) with consensus.
+- Improve recall on subtle attacks by testing other models and more features.
+- Add continuous online learning so the model adapts to new attack patterns.
+
+## Publication
+This project is the real-time implementation of the paper:
+
+**"Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks"**
+
+- Authors: [author names]
+- Conference: ICOSICS 2026, [full conference name]
+- Publisher: IEEE
+- Status: [accepted / presented / published in IEEE Xplore]
+- DOI / link: [add when available]
+  
 ## TEAM
 - Person A: Data collection, Preprocessing, ML model, Dynamic Trust score
 - Person B: Blockchain, Pipeline, Dashboard
