@@ -1,4 +1,4 @@
-# BLOCKCHAIN TRUST SCORE MODEL
+# ML - BLOCKCHAIN MODEL
 
 Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks". Sensor data is simulated.
 
@@ -15,7 +15,7 @@ Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning
 - `blockchain/` - blockchain with SHA-256 hashing and tamper detection (Person B)
 - `pipeline/` - real-time pipeline connecting all stages (Person B)
 - `dashboard/` - live Streamlit dashboard (Person B)
-- `screenshot/` - dashboard screenshot
+- `screenshot/` - dashboard screenshots
 
 ## SETUP
     pip install -r requirements.txt
@@ -31,31 +31,20 @@ Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning
 
 Note: This overwrites the saved model and graph files in the `detection` folder.
 
+## Flow line
+
+Sensors → Preprocessing → Random Forest → Trust score → Blockchain → Verification → Dashboard
+
 ## DASHBOARD
 
-Normal dashboard is :
+### Normal operation (chain status VALID)
+![Dashboard summary](screenshot/image1.png)
+![Dashboard records](screenshot/image2.png)
+![Dashboard trust scores](screenshot/image3.png)
 
-![Dasboard](screenshot/image1.png)
-
-
-
-Normal operation, chain status VALID:
-
-![Dashboard normal](screenshot/image2.png)
-
-
-
-![Dashboard normal](screenshot/image3.png)
-
-
-
-
-After a stored record is tampered with, chain status turns TAMPERED and the changed block is flagged:
-
-
-
+### After tampering (chain status TAMPERED)
+After a stored record is tampered with, the chain status turns TAMPERED and the changed block is flagged :
 ![Dashboard tampered](screenshot/image4.png)
-
 
 
 ## RESULTS
@@ -79,7 +68,7 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 ## LIMITATIONS
 - Sensor data is simulated, not collected from physical IoT hardware.
 - The blockchain runs on a single machine without distributed consensus.
-- These all data are collected in single stimulation.
+
 
 ## FUTURE WORK 
 - Test the system on a real IoT testbed with physical sensors instead of simulated data.
