@@ -15,7 +15,7 @@ Real-time implementation of the paper "Blockchain-Assisted Machine Learning Fram
 - `blockchain/` - blockchain with SHA-256 hashing and tamper detection (Person B)
 - `pipeline/` - real-time pipeline connecting all stages (Person B)
 - `dashboard/` - live Streamlit dashboard (Person B)
-- `screenshots/` - dashboard screenshots
+- `screenshot/` - dashboard screenshot
 
 ## Setup
     pip install -r requirements.txt
