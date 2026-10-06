@@ -40,6 +40,7 @@ Normal dashboard is :
 Normal operation, chain status VALID:
 
 ![Dashboard normal](screenshot/image2.png)
+
 ![Dashboard normal](screenshot/image3.png)
 
 After a stored record is tampered with, chain status turns TAMPERED and the changed block is flagged:
