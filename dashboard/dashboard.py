@@ -18,39 +18,41 @@ sys.path.insert(0, os.path.join(HERE, "..", "pipeline"))
 
 from blockchain import Blockchain  # noqa: E402
 import pipeline as pl              # noqa: E402
+import trust_score                 # noqa: E402  (from the detection folder)
 
 st.set_page_config(page_title="EML Blockchain Model", layout="wide")
 st.title("EML Blockchain Model - Live Monitor")
 st.caption("Fake sensor data detection with dynamic trust scores and a tamper-proof blockchain")
 
-UNTRUSTED_BELOW = 0.30
+UNTRUSTED_BELOW = trust_score.THETA     # threshold from the paper (0.3)
 
 
 def reset():
+    st.session_state.net = pl.new_network()     # new sensors + fresh trust scores
+    st.session_state.tick = 0
     st.session_state.bc = Blockchain()
     st.session_state.anchor = st.session_state.bc.get_anchor()
     st.session_state.rows = []
     st.session_state.latencies = []
-    for n in pl.NODES:
-        pl._trust[n] = 0.5
 
 
-def add_readings(n):
+def add_readings(n_ticks):
+    """Each tick = one reading from each of the 10 nodes."""
     bc = st.session_state.bc
-    for _ in range(n):
-        start = time.perf_counter()
-        rec = pl.process_reading(pl.generate_reading())
-        block = bc.add_block(rec["node_id"], rec["sensor_data"], rec["prediction"],
-                             rec["confidence"], rec["trust_score"], label=rec["label"])
-        st.session_state.latencies.append((time.perf_counter() - start) * 1000)
-        st.session_state.rows.append({
-            "block": block.index,
-            "node": rec["node_id"],
-            "temperature": rec["sensor_data"]["temperature"],
-            "humidity": rec["sensor_data"]["humidity"],
-            "prediction": "FAKE" if rec["prediction"] else "ok",
-            "trust": rec["trust_score"],
-        })
+    for _ in range(n_ticks):
+        for r in pl.process_tick(st.session_state.net, bc, st.session_state.tick):
+            st.session_state.latencies.append(r["latency_ms"])
+            st.session_state.rows.append({
+                "block": r["block"],
+                "node": r["node"],
+                "temperature": r["temperature"],
+                "humidity": r["humidity"],
+                "pressure": r["pressure"],
+                "prediction": "FAKE" if r["prediction"] else "ok",
+                "actual": "FAKE" if r["label"] else "ok",
+                "trust": r["trust"],
+            })
+        st.session_state.tick += 1
     st.session_state.anchor = bc.get_anchor()   # legitimate additions update the anchor
 
 
@@ -61,7 +63,7 @@ bc = st.session_state.bc
 
 # ---------------- sidebar controls ----------------
 st.sidebar.header("Controls")
-n = st.sidebar.slider("Readings to generate", 1, 100, 20)
+n = st.sidebar.slider("Ticks to generate (10 readings each)", 1, 30, 5)
 if st.sidebar.button("Generate readings", type="primary"):
     add_readings(n)
 
