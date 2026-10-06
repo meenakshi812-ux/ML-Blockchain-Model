@@ -7,10 +7,10 @@ This project is the real-time implementation of the paper:
 
 **"Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks"**
 
-- Authors: [S.Meenakshi , K.Priyadharshini , S.Vignesh devi , Dr.J.V.Anchitaalagammai, Dr.S.Kavitha , Mr.S.Murali]
-- Conference: ICOSICS 2026, [International Conference on Secure IoT and Cybersecurity ]
+- Authors: S.Meenakshi , K.Priyadharshini , S.Vignesh devi , Dr.J.V.Anchitaalagammai, Dr.S.Kavitha , Mr.S.Murali
+- Conference: ICOSICS International Conference on Secure IoT and Cybersecurity 2026
 - Publisher: IEEE Xplore
-- Status: [accepted / presented IEEE Xplore]
+- Status: [Accepted and Presented IEEE Xplore]
 
 ## HOW IT WORKS 
 1. 10 virtual sensor nodes generate readings (temperature, humidity, pressure). Some readings are fake (spoof, spike, drift, replay, stuck).
@@ -20,7 +20,7 @@ This project is the real-time implementation of the paper:
 5. Every record is stored on a hash-linked blockchain (SHA-256).
 6. Each record is verified, so any tampering is detected immediately.
 
-## WORK FLOW
+## WORKFLOW
 Sensors → Preprocessing → Random Forest → Trust score → Blockchain → Verification → Dashboard
 
 
@@ -82,6 +82,7 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 - Sensor data is simulated, not collected from physical IoT hardware.
 - The blockchain runs on a single machine without distributed consensus.
 - Recall (0.905) is lower than the paper's (0.96)
+- F1 score (0.944) is lower than paper's (0.955)
 
 
 ## FUTURE WORK 
