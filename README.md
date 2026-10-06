@@ -2,6 +2,16 @@
 
 Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks". Sensor data is simulated.
 
+## PUBLICATION
+This project is the real-time implementation of the paper:
+
+**"Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks"**
+
+- Authors: [S.Meenakshi , K.Priyadharshini , S.Vignesh devi , Dr.J.V.Anchitaalagammai, Dr.S.Kavitha , Mr.S.Murali]
+- Conference: ICOSICS 2026, [International Conference on Secure IoT and Cybersecurity ]
+- Publisher: IEEE Xplore
+- Status: [accepted / presented IEEE Xplore]
+
 ## HOW IT WORKS 
 1. 10 virtual sensor nodes generate readings (temperature, humidity, pressure). Some readings are fake (spoof, spike, drift, replay, stuck).
 2. Preprocessing cleans each reading and builds features.
@@ -9,6 +19,10 @@ Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning
 4. A dynamic trust score is updated for each node.
 5. Every record is stored on a hash-linked blockchain (SHA-256).
 6. Each record is verified, so any tampering is detected immediately.
+
+## WORK FLOW
+Sensors → Preprocessing → Random Forest → Trust score → Blockchain → Verification → Dashboard
+
 
 ## FOLDERS
 - `detection/` - data generator, preprocessing, ML model and trust score (Person A)
@@ -31,19 +45,18 @@ Real-time implementation of the IEEE paper "Blockchain-Assisted Machine Learning
 
 Note: This overwrites the saved model and graph files in the `detection` folder.
 
-## Flow line
-
-Sensors → Preprocessing → Random Forest → Trust score → Blockchain → Verification → Dashboard
 
 ## DASHBOARD
 
 ### Normal operation (chain status VALID)
+
 ![Dashboard summary](screenshot/image1.png)
-![Dashboard records](screenshot/image2.png)
-![Dashboard trust scores](screenshot/image3.png)
+![Dashboard normal data](screenshot/image2.png)
+![Dashboard normal data](screenshot/image3.png)
 
 ### After tampering (chain status TAMPERED)
-After a stored record is tampered with, the chain status turns TAMPERED and the changed block is flagged :
+After a stored record is tampered with, the chain status turns TAMPERED and the changed block is flagged:
+
 ![Dashboard tampered](screenshot/image4.png)
 
 
@@ -68,6 +81,7 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 ## LIMITATIONS
 - Sensor data is simulated, not collected from physical IoT hardware.
 - The blockchain runs on a single machine without distributed consensus.
+- Recall (0.905) is lower than the paper's (0.96)
 
 
 ## FUTURE WORK 
@@ -76,17 +90,6 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 - Improve recall on subtle attacks by testing other models and more features.
 - Add continuous online learning so the model adapts to new attack patterns.
 
-## Publication
-This project is the real-time implementation of the paper:
-
-**"Blockchain-Assisted Machine Learning Framework with Dynamic Trust Scoring for Secure Fake Sensor Data Detection and Tamper-Proof Data Integrity in IoT Networks"**
-
-- Authors: [author names]
-- Conference: ICOSICS 2026, [full conference name]
-- Publisher: IEEE
-- Status: [accepted / presented / published in IEEE Xplore]
-- DOI / link: [add when available]
-  
 ## TEAM
 - Person A: Data collection, Preprocessing, ML model, Dynamic Trust score
 - Person B: Blockchain, Pipeline, Dashboard
