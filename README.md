@@ -94,3 +94,8 @@ All 4 attacks detected: edited value, deleted block, reordered blocks, deleted l
 ## TEAM
 - Person A: Data collection, Preprocessing, ML model, Dynamic Trust score
 - Person B: Blockchain, Pipeline, Dashboard
+
+## CONTRIBUTORS
+MEENAKSHI S 
+PRIYADHARSHINI K
+## FACULTY GUIDES
