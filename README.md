@@ -49,6 +49,7 @@ Normal operation, chain status VALID:
 
 
 
+
 After a stored record is tampered with, chain status turns TAMPERED and the changed block is flagged:
 
 
